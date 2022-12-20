@@ -16,11 +16,9 @@ function Range() {
   return (
     <div className="container">
       <div className="imagen">
-        <img src={background} alt="range inicial" width="600" />
+        <img src={background} alt="range inicial" width="500" heigth="450" />
       </div>
-      <div>
-        <h3>{titulo} </h3>
-      </div>
+      <div></div>
       <div className="geral">
         <div className="esquerda">
           <div>
@@ -45,7 +43,7 @@ function Range() {
           </div>
           <div>
             <button className="open">CO</button>
-            <button className="flat">vs EP-MP</button>
+            <button className="flat">vs EP/MP</button>
             <button className="oop">IP</button>
             <button className="oop">OOP</button>
           </div>
@@ -58,15 +56,24 @@ function Range() {
           <div>
             <button className="open">BTN</button>
             <button className="flat">vs EP-MP</button>
-            <button className="flat">vs CO</button>
+            <button className="flat" id="co">
+              vs CO
+            </button>
+            <button className="oop">OOP</button>
           </div>
           <div>
             <button className="open">SB</button>
             <button className="raise">vs EP-MP</button>
             <button className="raise">vs CO BTN</button>
           </div>
+          <div>
+            <button className="call">Ep/MP</button>
+            <button className="call">CO</button>
+            <button className="call">BTN</button>
+            <button className="call">SB</button>
+          </div>
+          <div> direita</div>
         </div>
-        <div className="direita">x</div>
       </div>
     </div>
   );

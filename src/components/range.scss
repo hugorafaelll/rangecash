@@ -16,19 +16,13 @@ body {
 
 
 .container {
-    width: 600px;
+    width: 500px;
     margin-top: 10px;
     margin-left: 10px;
     background-color:black;
 }
 
 
-
-h3{
-   margin-left: auto;
-    margin-right: auto;
-    width: 10em;
-}
 
 .geral{
     display: flex;
@@ -64,16 +58,18 @@ h3{
         .raise {
         background-color:#DD1A1A;
         width: 90px;
-
-}
+    }
+    .call{
+        background-color:#DDB21A ;
+        width: 55px;
+    }
+    #co{
+        width: 60px;
+    }
 
 
 
     }
-    .direita{
-        text-align:center;
-        background-color: blue;
-        margin-left: 10px;
-    }
+ 
 
 }
