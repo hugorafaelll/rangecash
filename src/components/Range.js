@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 import "./Range.scss";
 
-import principal from "./range betheshark/principal.png";
-import Ep from "./range betheshark/open raise/ep 18,5.png";
+// import principal from "./range betheshark/principal.png";
+import Ep from "./range/ep.png";
+import Mp from "./range/mp.png";
+import Co from "./range/co.png";
+import Btn from "./range/btn.png";
+import Sb from "./range/sb.png";
 
 function Range() {
-  const [background, setBackground] = useState(principal);
+  const [background, setBackground] = useState();
   const [titulo, setTitulo] = useState();
 
   const chamar = (background, titulo) => {
@@ -30,31 +34,41 @@ function Range() {
             </button>
             <button
               className="oop"
-              onClick={() => chamar(principal, "Testando esse caraio")}
+              onClick={() => chamar("", "Testando esse caraio")}
             >
               OOP
             </button>
           </div>
           <div>
-            <button className="open">MP</button>
+            <button
+              className="open"
+              onClick={() => chamar(Mp, "Mp - Open raise")}
+            >
+              MP
+            </button>
             <button className="flat">VS EP </button>
             <button className="oop">IP</button>
             <button className="oop">OOP</button>
           </div>
+
           <div>
-            <button className="open">CO</button>
-            <button className="flat">vs EP/MP</button>
-            <button className="oop">IP</button>
-            <button className="oop">OOP</button>
-          </div>
-          <div>
-            <button className="open">CO</button>
+            <button
+              className="open"
+              onClick={() => chamar(Co, "Ep - Open raise")}
+            >
+              CO
+            </button>
             <button className="flat">vs EP-MP</button>
             <button className="oop">IP</button>
             <button className="oop">OOP</button>
           </div>
           <div>
-            <button className="open">BTN</button>
+            <button
+              className="open"
+              onClick={() => chamar(Btn, "Ep - Open raise")}
+            >
+              BTN
+            </button>
             <button className="flat">vs EP-MP</button>
             <button className="flat" id="co">
               vs CO
@@ -62,7 +76,12 @@ function Range() {
             <button className="oop">OOP</button>
           </div>
           <div>
-            <button className="open">SB</button>
+            <button
+              className="open"
+              onClick={() => chamar(Sb, "Ep - Open raise")}
+            >
+              SB
+            </button>
             <button className="raise">vs EP-MP</button>
             <button className="raise">vs CO BTN</button>
           </div>
