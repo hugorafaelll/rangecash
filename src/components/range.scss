@@ -22,16 +22,18 @@ body {
     background-color:black;
 }
 
-
+.titulo{
+   text-align: center;
+ 
+}
 
 .geral{
-    display: flex;
-    background-color:#1e1e1e ;
-
+    display: inline-block;
+    
   
 
     .esquerda{
-        background-color: red;
+        background-color: rgb(255, 0, 0);
 
         button{
             width: 75px;
@@ -71,5 +73,6 @@ body {
 
     }
  
+
 
 }
