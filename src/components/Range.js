@@ -129,7 +129,7 @@ function Range() {
             </button>
             <button
               className="raise"
-              onClick={() => chamar(raiseCO, "Sb 3bet EP - MP")}
+              onClick={() => chamar(raiseCO, "Sb 3bet Co - BTN")}
             >
               vs CO BTN
             </button>
