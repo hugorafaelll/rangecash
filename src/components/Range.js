@@ -15,6 +15,11 @@ import defbbvssb from "./range/BB 3BET SB.png";
 import raiseEP from "./range/3BET SB VS EP-MP.png";
 import raiseCO from "./range/3BET SB VS CO-BTN.png";
 
+import bbDefendEP from "./range/bb vs ep.png";
+import bbDefendCo from "./range/bb vs co.png";
+import bbDefendBtn from "./range/bb vs btn.png";
+import bbDefendSb from "./range/bb vs sb.png";
+
 function Range() {
   const [background, setBackground] = useState(Btn);
   const [titulo, setTitulo] = useState();
@@ -31,8 +36,7 @@ function Range() {
           src={background}
           className="geral-image"
           alt="range inicial"
-          width="500"
-          heigth="450"
+          width="600px"
         />
       </div>
       <div className="titulo">
@@ -135,10 +139,30 @@ function Range() {
             </button>
           </div>
           <div>
-            <button className="call">Ep/MP</button>
-            <button className="call">CO</button>
-            <button className="call">BTN</button>
-            <button className="call">SB</button>
+            <button
+              className="call"
+              onClick={() => chamar(bbDefendEP, "BB defende vs EP")}
+            >
+              Ep/MP
+            </button>
+            <button
+              className="call"
+              onClick={() => chamar(bbDefendCo, "BB defende vs CO ")}
+            >
+              CO
+            </button>
+            <button
+              className="call"
+              onClick={() => chamar(bbDefendBtn, "BB defende vs Btn")}
+            >
+              BTN
+            </button>
+            <button
+              className="call"
+              onClick={() => chamar(bbDefendSb, "BB defende vs Sb")}
+            >
+              SB
+            </button>
           </div>
         </div>
       </div>

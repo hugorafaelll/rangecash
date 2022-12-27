@@ -18,11 +18,13 @@ body {
 
 
 
+
 .container {
-    width: 500px;
+    width: 600px;
     margin-top: 10px;
     margin-left: 10px;
 }
+
 
 .titulo{
    text-align: center;
@@ -77,4 +79,35 @@ body {
  
 
 
+}
+
+@media screen and (max-width:700px) {
+    .container{
+        width: 100vw;
+            margin: auto;
+    }
+    img{
+        width: 100vw;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width:400px) {
+
+
+
+    .container {
+            width: 100vw;
+        margin-right: 10px;
+        margin: auto;
+        }
+    img {
+        width: 100vw;
+        margin-right: 10px;
+
+    }
+    .titulo{
+        text-align: left;
+        padding-left: 60px;
+    }
 }
