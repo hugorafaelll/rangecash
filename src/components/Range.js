@@ -63,13 +63,13 @@ function Range() {
             </button>
             <button
               className="oop"
-              onClick={() => chamar("", "Testando esse caraio", "")}
+              onClick={() => chamar(epIp, "Ep vs 3bet Ip", "4bet 2,2x")}
             >
               IP
             </button>
             <button
               className="oop"
-              onClick={() => chamar("", "Testando esse caraio", "")}
+              onClick={() => chamar(epOop, "Ep vs 3bet Oop", "4bet 2,75x")}
             >
               OOP
             </button>
@@ -89,8 +89,18 @@ function Range() {
             >
               VS EP
             </button>
-            <button className="oop">IP</button>
-            <button className="oop">OOP</button>
+            <button
+              className="oop"
+              onClick={() => chamar(mpIp, "MP vs 3bet Ip", "4bet 2,2x")}
+            >
+              IP
+            </button>
+            <button
+              className="oop"
+              onClick={() => chamar(mpOop, "MP vs 3bet Oop", "4bet 2,2x")}
+            >
+              OOP
+            </button>
           </div>
 
           <div>
@@ -108,8 +118,18 @@ function Range() {
             >
               vs EP-MP
             </button>
-            <button className="oop">IP</button>
-            <button className="oop">OOP</button>
+            <button
+              className="oop"
+              onClick={() => chamar(coIp, "Co vs 3bet Ip", "4bet 2,2x")}
+            >
+              IP
+            </button>
+            <button
+              className="oop"
+              onClick={() => chamar(coOop, "Co vs 3bet Oop", "4bet 2,75x")}
+            >
+              OOP
+            </button>
           </div>
           <div>
             <button
@@ -137,9 +157,7 @@ function Range() {
             </button>
             <button
               className="oop"
-              onClick={() =>
-                chamar(defbbvssb, "BTN vs 3bet do BB", "4bet - 2,2x")
-              }
+              onClick={() => chamar(btnIp, "BTN vs 3bet Ip", "4bet - 2,2x")}
             >
               IP
             </button>
