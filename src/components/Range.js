@@ -20,6 +20,14 @@ import bbDefendCo from "./range/bb vs co.png";
 import bbDefendBtn from "./range/bb vs btn.png";
 import bbDefendSb from "./range/bb vs sb.png";
 
+import epIp from "./range/ep ip.png";
+import epOop from "./range/ep oop.png";
+import mpIp from "./range/mp ip.png";
+import mpOop from "./range/mp oop.png";
+import coIp from "./range/co ip.png";
+import coOop from "./range/co oop.png";
+import btnIp from "./range/btn ip.png";
+
 function Range() {
   const [background, setBackground] = useState(Btn);
   const [titulo, setTitulo] = useState();
