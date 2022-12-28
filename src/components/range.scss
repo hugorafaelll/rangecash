@@ -105,15 +105,22 @@ body {
         width: 100vw;
             margin: auto;
             overflow: hidden;
+
+
+            .geral{
+                display: block;
+            }
     }
     img{
         width: 100vw;
         margin-right: 10px;
     }
 
-    .size{
-        display:none
+        .size{
     }
+
+
+    
 }
 
 @media screen and (max-width:400px) {
