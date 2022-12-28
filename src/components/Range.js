@@ -133,7 +133,7 @@ function Range() {
           <div>
             <button
               className="open"
-              onClick={() => chamar(Sb, "Ep - Open raise", "2 bb")}
+              onClick={() => chamar(Sb, "Ep - Open raise", "2,5 bb")}
             >
               SB
             </button>
