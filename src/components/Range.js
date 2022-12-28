@@ -23,10 +23,12 @@ import bbDefendSb from "./range/bb vs sb.png";
 function Range() {
   const [background, setBackground] = useState(Btn);
   const [titulo, setTitulo] = useState();
+  const [size, setSize] = useState();
 
-  const chamar = (background, titulo) => {
+  const chamar = (background, titulo, size) => {
     setBackground(background);
     setTitulo(titulo);
+    setSize(size);
   };
 
   return (
@@ -40,20 +42,20 @@ function Range() {
         />
       </div>
       <div className="titulo">
-        <h7>{titulo}</h7>
+        <h3>{titulo}</h3>
       </div>
       <div className="geral">
         <div className="esquerda">
           <div>
             <button
               className="open"
-              onClick={() => chamar(Ep, "Ep - Open raise")}
+              onClick={() => chamar(Ep, "Ep - Open raise", "2 bb")}
             >
               EP
             </button>
             <button
               className="oop"
-              onClick={() => chamar("", "Testando esse caraio")}
+              onClick={() => chamar("", "Testando esse caraio", "")}
             >
               OOP
             </button>
@@ -61,13 +63,15 @@ function Range() {
           <div>
             <button
               className="open"
-              onClick={() => chamar(Mp, "Mp - Open raise")}
+              onClick={() => chamar(Mp, "Mp - Open raise", "2 bb")}
             >
               MP
             </button>
             <button
               className="flat"
-              onClick={() => chamar(flatEP, "MP vs Open Raise EP")}
+              onClick={() =>
+                chamar(flatEP, "MP vs Open Raise EP", "3bet - 3,0x")
+              }
             >
               VS EP
             </button>
@@ -78,13 +82,15 @@ function Range() {
           <div>
             <button
               className="open"
-              onClick={() => chamar(Co, "Ep - Open raise")}
+              onClick={() => chamar(Co, "Ep - Open raise", "2,2 bb")}
             >
               CO
             </button>
             <button
               className="flat"
-              onClick={() => chamar(flatEP, "CO vs Open Raise EP - MP")}
+              onClick={() =>
+                chamar(flatEP, "CO vs Open Raise EP - MP", "3bet - 3,0x")
+              }
             >
               vs EP-MP
             </button>
@@ -94,26 +100,32 @@ function Range() {
           <div>
             <button
               className="open"
-              onClick={() => chamar(Btn, "Ep - Open raise")}
+              onClick={() => chamar(Btn, "Ep - Open raise", "2,2 bb")}
             >
               BTN
             </button>
             <button
               className="flat"
-              onClick={() => chamar(flatEP, "BTN vs Open Raise EP - MP")}
+              onClick={() =>
+                chamar(flatEP, "BTN vs Open Raise EP - MP", "3bet - 3,0x")
+              }
             >
               vs EP-MP
             </button>
             <button
               className="flat"
               id="co"
-              onClick={() => chamar(flatBTN, "BTN vs Open Raise CO")}
+              onClick={() =>
+                chamar(flatBTN, "BTN vs Open Raise CO", "3bet - 3,0x")
+              }
             >
               vs CO
             </button>
             <button
               className="oop"
-              onClick={() => chamar(defbbvssb, "BTN vs 3bet do BB")}
+              onClick={() =>
+                chamar(defbbvssb, "BTN vs 3bet do BB", "4bet - 2,2x")
+              }
             >
               IP
             </button>
@@ -121,19 +133,27 @@ function Range() {
           <div>
             <button
               className="open"
-              onClick={() => chamar(Sb, "Ep - Open raise")}
+              onClick={() => chamar(Sb, "Ep - Open raise", "2 bb")}
             >
               SB
             </button>
             <button
               className="raise"
-              onClick={() => chamar(raiseEP, "Sb 3bet EP - MP")}
+              onClick={() =>
+                chamar(raiseEP, "Sb 3bet EP - MP", "3bet - 4,5x / 4bet - 2,75x")
+              }
             >
               vs EP-MP
             </button>
             <button
               className="raise"
-              onClick={() => chamar(raiseCO, "Sb 3bet Co - BTN")}
+              onClick={() =>
+                chamar(
+                  raiseCO,
+                  "Sb 3bet Co - BTN",
+                  "3bet - 4,5x / 4bet - 2,75x"
+                )
+              }
             >
               vs CO BTN
             </button>
@@ -141,28 +161,57 @@ function Range() {
           <div>
             <button
               className="call"
-              onClick={() => chamar(bbDefendEP, "BB defende vs EP")}
+              onClick={() =>
+                chamar(
+                  bbDefendEP,
+                  "BB defende vs EP",
+                  "3bet - 4,5x / 4bet - 2,75x"
+                )
+              }
             >
               Ep/MP
             </button>
             <button
               className="call"
-              onClick={() => chamar(bbDefendCo, "BB defende vs CO ")}
+              onClick={() =>
+                chamar(
+                  bbDefendCo,
+                  "BB defende vs CO ",
+                  "3bet - 4,5x / 4bet - 2,75x"
+                )
+              }
             >
               CO
             </button>
             <button
               className="call"
-              onClick={() => chamar(bbDefendBtn, "BB defende vs Btn")}
+              onClick={() =>
+                chamar(
+                  bbDefendBtn,
+                  "BB defende vs Btn",
+                  "3bet - 4,5x / 4bet - 2,75x"
+                )
+              }
             >
               BTN
             </button>
             <button
               className="call"
-              onClick={() => chamar(bbDefendSb, "BB defende vs Sb")}
+              onClick={() =>
+                chamar(
+                  bbDefendSb,
+                  "BB defende vs Sb",
+                  "3bet - 4,5x / 4bet - 2,75x"
+                )
+              }
             >
               SB
             </button>
+          </div>
+        </div>
+        <div className="direita">
+          <div className="size">
+            <h4>Size: {size}</h4>
           </div>
         </div>
       </div>
