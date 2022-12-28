@@ -57,6 +57,12 @@ function Range() {
               className="oop"
               onClick={() => chamar("", "Testando esse caraio", "")}
             >
+              IP
+            </button>
+            <button
+              className="oop"
+              onClick={() => chamar("", "Testando esse caraio", "")}
+            >
               OOP
             </button>
           </div>
