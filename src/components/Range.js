@@ -51,6 +51,9 @@ function Range() {
       </div>
       <div className="titulo">
         <h3>{titulo}</h3>
+        <div className="size">
+          <h4>Size: {size}</h4>
+        </div>
       </div>
       <div className="geral">
         <div className="esquerda">
@@ -241,11 +244,7 @@ function Range() {
             </button>
           </div>
         </div>
-        <div className="direita">
-          <div className="size">
-            <h4>Size: {size}</h4>
-          </div>
-        </div>
+        <div className="direita"></div>
       </div>
     </div>
   );

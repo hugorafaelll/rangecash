@@ -27,7 +27,12 @@ body {
 
 
 .titulo{
-   text-align: center;
+   text-align: left;
+   .size{
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0;
+   }
  
 }
 
@@ -41,6 +46,7 @@ body {
         width: 300px;
         flex-direction: row; 
         margin-left: 10%;
+      
 
 
 
@@ -109,7 +115,9 @@ body {
 
             .geral{
                 display: block;
+                overflow: hidden;
             }
+        
     }
     img{
         width: 100vw;
@@ -119,10 +127,11 @@ body {
         .size{
             h4{
                 margin: 0;
+                overflow: hidden;
             }
     }
 
-
+ 
     
 }
 
