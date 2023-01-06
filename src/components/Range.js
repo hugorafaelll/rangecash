@@ -10,7 +10,6 @@ import Sb from "./range/sb.png";
 
 import flatEP from "./range/FLAT VS EP-MP.png";
 import flatBTN from "./range/FLAT BTN VS CO.png";
-import defbbvssb from "./range/BB 3BET SB.png";
 
 import raiseEP from "./range/3BET SB VS EP-MP.png";
 import raiseCO from "./range/3BET SB VS CO-BTN.png";
